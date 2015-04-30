@@ -1,0 +1,14 @@
+{
+  "name": "TwitterMuter1",
+  "version": "0.0.0",
+  "description": "TwitterMuter1",
+  "main": "app.js",
+  "author": {
+    "name": "Uri",
+    "email": ""
+  },
+  "dependencies": {
+    "ntwitter": "file:C:\\Users\\Uri\\AppData\\Local\\Temp\\npm-3844-2a35b016\\git-cache-290b2439ec76\\84127b972e9bfe94d0345031b904eb4238d2a066",
+    "twitter-js-client": "file:C:\\Users\\Uri\\AppData\\Local\\Temp\\npm-6712-a46edc1e\\git-cache-733bd2f061d5\\961ab037b5c685c95932979e7dc4149abf0fc1ff"
+  }
+}
