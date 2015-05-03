@@ -28,6 +28,7 @@ node_modules
 
 # Visual Studio
 obj
+bin
 .ntvs_analysis.dat
 *.suo
 
