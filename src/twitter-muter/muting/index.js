@@ -1,8 +1,10 @@
 (function (muting) {
+  var regexp;
+  
   muting.init = function (twit) {
     muting.twitter = twit
-    muting.regexp = new RegExp()
-    muting.regexp.compile('^(.+)\\s+(.+)$')
+    regexp = new RegExp()
+    regexp.compile('^(.+)\\s+(.+)$')
   }
 
   muting.getMutedUserIds = function () {
@@ -24,17 +26,11 @@
 
   muting.processDirectMessage = function (directMessage) {
     console.log(directMessage)
-    var results = muting.regexp.exec(directMessage)
+    var results = regexp.exec(directMessage)
     // if (results.length <= 3) return false
     var userToMute = results[1]
     var durationToMute = results[2]
     return [userToMute, durationToMute]
   }
-
-/*
-twitter.get('/mutes/users / ids.json', { }, function (err, data, response) {
-    console.log(data)
-
-twitter.getCustomApiCall('/mutes/users/ids.json', { }, error, success)
-*/
+  
 })(module.exports)
